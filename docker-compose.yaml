@@ -17,7 +17,7 @@ services:
       - "16686:16686"  # Jaeger UI
 
   prometheus:
-    image: prom/prometheus:latest
+    image: prom/prometheus:v3.3.0
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
